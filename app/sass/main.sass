@@ -1,0 +1,70 @@
+@import "mixin"
+
+$width: 3em
+$height: 5em
+$color: #ff0000
+$bgcolor: #ffcccc
+
+$fontSize: 14px
+$fontFamily: Arial
+$fontWeight: bold
+$fontColor: #ffe6e6
+
+.v-center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
+*
+  padding: 0
+  margin: 0
+
+h1
+  font-size: 30px
+  color: #eeeeee
+  border-bottom: 3px solid red
+
+.center-block
+  position: relative
+  background: grey
+  margin: 20px 0
+  height: 80px
+  width: 100%
+  box-sizing: border-box
+  &.green
+    background: green
+  &.red
+    background: red
+  &.blue
+    background: green
+
+.block-1
+  @include block-v()
+.block-2
+  @include block-v(30px,60px,blue)
+.block-3
+  @include block-v(40px,50px,green)
+.block-4
+  @include block-v(50px,30px,white)
+
+.one
+  border: 3px solid #000080
+  @include b-radius(15px)
+
+.box
+  min-width: $width
+  height: $height
+  background-color: $bgcolor
+
+
+  p
+    /* вложенные свойства */
+    font:
+      family: $fontFamily
+      size: $fontSize + 2px
+      weight: $fontWeight
+    color: $fontColor
+    
+    &:hover
+      color: lighten($color,10%)
