@@ -19,16 +19,34 @@
   display: flex
   align-items: center
   justify-content: space-between
-  li a
+  li
+    margin-right: 36px
+    a
+      color: #fff
+      transition: 0.3s
+      &:hover
+        color: $main_color
+        transition: 0.3s
+.menu-btns
+  a
     color: #fff
+    height: 45px
+    line-height: 45px
+    font-size: 20px
+    padding: 11px 17px
     transition: 0.3s
     &:hover
-      color: $main_color
+      background-color: $main_color_hover
       transition: 0.3s
-.menu-btns
- a
-  color: #fff
-  transition: 0.3s
+  .call-btn
+    margin-right: 20px
+    a
+      background-image: url("../img/icon-phone.svg")
+      background-position: center
+      background-repeat: no-repeat
+      padding: 11px 22px
+
+
 
 #main
   background-color: #0a8ac4
@@ -41,12 +59,12 @@
     color: #fff
     h1
       font-size: 30px
-      font-weight: bold
+      font-family: 'GothamProBold',sans-serif
       line-height: 1.67
       letter-spacing: normal
     p
       font-size: 24px
-      font-weight: 300
+      font-family: 'GothamProLight',sans-serif
 .h2-tittle
   padding-bottom: 44px
 
@@ -93,7 +111,7 @@
     padding-bottom: 20px
     h3
       font-size: 24px
-      font-weight: bold
+      font-family: 'GothamProBold',sans-serif
       color: #ffffff
       margin: 0
       line-height: 1
@@ -108,7 +126,7 @@
         border-radius: 3px
       span
         font-size: 12px
-        font-weight: 300
+        font-family: 'GothamProLight',sans-serif
         font-style: italic
         text-align: left
         color: #ffffff
@@ -128,7 +146,7 @@
   justify-content: center
   p
     font-size: 20px
-    font-weight: bold
+    font-family: 'GothamProBold',sans-serif
     padding-left: 16px
     line-height: 1.1
 
@@ -144,7 +162,7 @@
       line-height: 1
     p
       font-size: 20px
-      font-weight: 300
+      font-family: 'GothamProLight',sans-serif
       color: #696969
   &-txt
     padding-left: 49px
@@ -164,7 +182,7 @@
           line-height: 1.13
         .number
           font-size: 36px
-          font-weight: 300
+          font-family: 'GothamProLight',sans-serif
           color: $main_color
           padding-bottom: 5px
 
@@ -187,7 +205,7 @@
         position: absolute
       p
         font-size: 64px
-        font-weight: bold
+        font-family: 'BlissProBold', sans-serif
         text-align: center
         color: #ffffff
         width: 100px
@@ -256,14 +274,15 @@
     font-size: 18px
     line-height: 1.33
     color: #fff
-    font-weight: 300
+    font-family: 'GothamProLight',sans-serif
     &.bold
-      font-weight: bold
+      font-family: 'GothamProBold',sans-serif
       opacity: 1
     &.email
-      font-weight: 300
+      font-family: 'GothamProLight',sans-serif
 
 .copy
   text-align: center
   padding: 18px 0 22px
   color: #696969
+  font-family: 'BlissProLight', sans-serif

@@ -39,6 +39,7 @@ body {
   position: relative;
   font-size: 16px;
   line-height: 1.6;
+  font-family: 'GothamPro', sans-serif;
 }
 
 .container {
@@ -64,7 +65,7 @@ img {
 
 h2 {
   font-size: 36px;
-  font-weight: bold;
+  font-family: 'GothamProBold',sans-serif;
   letter-spacing: normal;
   text-align: center;
   color: #003f69;
@@ -76,7 +77,12 @@ h2 {
 h3 {
   color: #444444;
   font-size: 20px;
-  font-weight: bold;
+  font-family: 'GothamProBold',sans-serif;
+}
+
+.btn {
+  background-color: #e07713;
+  border-radius: 5px;
 }
 
 #top-line {
@@ -116,6 +122,12 @@ h3 {
   justify-content: space-between;
 }
 
+.menu-btns li,
+.main-nav li,
+.nav-wrap nav ul li {
+  margin-right: 36px;
+}
+
 .menu-btns li a,
 .main-nav li a,
 .nav-wrap nav ul li a {
@@ -136,9 +148,31 @@ h3 {
 
 .menu-btns a {
   color: #fff;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  padding: 11px 17px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+
+.menu-btns a:hover {
+  background-color: #d9521a;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu-btns .call-btn {
+  margin-right: 20px;
+}
+
+.menu-btns .call-btn a {
+  background-image: url("../img/icon-phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 11px 22px;
 }
 
 #main {
@@ -165,14 +199,14 @@ h3 {
 
 #main .main h1 {
   font-size: 30px;
-  font-weight: bold;
+  font-family: 'GothamProBold',sans-serif;
   line-height: 1.67;
   letter-spacing: normal;
 }
 
 #main .main p {
   font-size: 24px;
-  font-weight: 300;
+  font-family: 'GothamProLight',sans-serif;
 }
 
 .h2-tittle {
@@ -249,7 +283,7 @@ h3 {
 
 .get-title h3 {
   font-size: 24px;
-  font-weight: bold;
+  font-family: 'GothamProBold',sans-serif;
   color: #ffffff;
   margin: 0;
   line-height: 1;
@@ -271,7 +305,7 @@ h3 {
 
 .get-form label span {
   font-size: 12px;
-  font-weight: 300;
+  font-family: 'GothamProLight',sans-serif;
   font-style: italic;
   text-align: left;
   color: #ffffff;
@@ -304,7 +338,7 @@ h3 {
 
 .exerienced-block p {
   font-size: 20px;
-  font-weight: bold;
+  font-family: 'GothamProBold',sans-serif;
   padding-left: 16px;
   line-height: 1.1;
 }
@@ -329,7 +363,7 @@ h3 {
 
 .story-block p {
   font-size: 20px;
-  font-weight: 300;
+  font-family: 'GothamProLight',sans-serif;
   color: #696969;
 }
 
@@ -367,7 +401,7 @@ h3 {
 
 .story-txt-proud-list ul .number {
   font-size: 36px;
-  font-weight: 300;
+  font-family: 'GothamProLight',sans-serif;
   color: #e07713;
   padding-bottom: 5px;
 }
@@ -401,7 +435,7 @@ h3 {
 
 .how-block-number p {
   font-size: 64px;
-  font-weight: bold;
+  font-family: 'BlissProBold', sans-serif;
   text-align: center;
   color: #ffffff;
   width: 100px;
@@ -508,20 +542,21 @@ h3 {
   font-size: 18px;
   line-height: 1.33;
   color: #fff;
-  font-weight: 300;
+  font-family: 'GothamProLight',sans-serif;
 }
 
 .footer p.bold, .footer a.bold {
-  font-weight: bold;
+  font-family: 'GothamProBold',sans-serif;
   opacity: 1;
 }
 
 .footer p.email, .footer a.email {
-  font-weight: 300;
+  font-family: 'GothamProLight',sans-serif;
 }
 
 .copy {
   text-align: center;
   padding: 18px 0 22px;
   color: #696969;
+  font-family: 'BlissProLight', sans-serif;
 }
