@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Krotov LP</title>
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -57,6 +59,52 @@
         </div>
     </div>
 </header>
+
+<!--Services-->
+<section id="services">
+    <div class="container">
+        <div class="services">
+
+            <div class="h2-tittle">
+                <h2>Our services</h2>
+            </div>
+
+            <div class="services-block-wrap">
+                <!-- #-->
+                <div class="services-block">
+                    <div class="services-block-img"><img src="img/serv-1.svg" alt=""></div>
+
+                    <div class="services-block-txt">
+                        <h3>Design and Develop <br>New Products</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. </p>
+                    </div>
+                </div>
+                <!-- #-->
+                <div class="services-block">
+                    <div class="services-block-img"><img src="img/serv-2.svg" alt=""></div>
+
+                    <div class="services-block-txt">
+                        <h3>Improve <br>Existing Products</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. </p>
+                    </div>
+                </div>
+                <!-- #-->
+                <div class="services-block">
+                    <div class="services-block-img"><img src="img/serv-3.svg" alt=""></div>
+
+                    <div class="services-block-txt">
+                        <h3>Discover <br>New Opportunities</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <!--Benefits-->
 <section id="benefits">
@@ -200,10 +248,10 @@
                         <input type="text" name="name" placeholder="Name" required>
                         <span>* Don’t worry - we are hate spam? too!</span>
                     </label>
-                    <label>
+                    <label class="second">
                         <input type="tel" name="phone" placeholder="Phone" required>
                     </label>
-                    <button type="submit">Get quote!</button>
+                    <button type="submit" class="btn-sub">Get quote!</button>
                 </form>
             </div>
 
@@ -240,27 +288,76 @@
             <div class="exerienced-wrap">
                 <div id="exerienced-slider">
 
-                    <div class="exerienced-block">
-                        <div class="exerienced-img"><img src="img/ex1.png" alt="HTML"></div>
-                        <p>HTML</p>
+                    <!-- #-->
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex1.png" alt="HTML"></div>
+                            <p>HTML</p>
+                        </div>
                     </div>
-                    <div class="exerienced-block">
-                        <div class="exerienced-img"><img src="img/ex2.png" alt="CSS"></div>
-                        <p>CSS</p>
+                    <!-- #-->
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex2.png" alt="CSS"></div>
+                            <p>CSS</p>
+                        </div>
                     </div>
-                    <div class="exerienced-block">
-                        <div class="exerienced-img"><img src="img/ex3.png" alt="JavaScript"></div>
-                        <p>JavaScript</p>
+                    <!-- #-->
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex3.png" alt="JavaScript"></div>
+                            <p>JavaScript</p>
+                        </div>
                     </div>
-                    <div class="exerienced-block">
-                        <div class="exerienced-img"><img src="img/ex4.png" alt="Bootstrap"></div>
-                        <p>Bootstrap</p>
+                    <!-- #-->
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex4.png" alt="Bootstrap"></div>
+                            <p>Bootstrap</p>
+                        </div>
                     </div>
-                    <div class="exerienced-block">
-                        <div class="exerienced-img"><img src="img/ex5.png" alt="Google Analytics"></div>
-                        <p>Google<br>Analytics</p>
+                    <!-- #-->
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex5.png" alt="Google Analytics"></div>
+                            <p>Google<br>Analytics</p>
+                        </div>
                     </div>
-                    
+                    <!-- #-->
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex1.png" alt="HTML"></div>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex2.png" alt="CSS"></div>
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <!-- #-->
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex3.png" alt="JavaScript"></div>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <!-- #-->
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex4.png" alt="Bootstrap"></div>
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                    <!-- #-->
+                    <div class="ex">
+                        <div class="exerienced-block">
+                            <div class="exerienced-img"><img src="img/ex5.png" alt="Google Analytics"></div>
+                            <p>Google<br>Analytics</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -280,11 +377,33 @@
             <div class="story-wrap">
 
                 <!-- Story - slider -->
-                <div class="story-slider" id="story-slider">
-                    <div class="story-block">
-                        <div class="story-img"><img src="img/story-1.png" alt="Dmitry Krotov"></div>
-                        <h3>Dmitry Krotov</h3>
-                        <p>SEO</p>
+                <div class="story-slider">
+                    <div id="story-slider">
+
+                        <div class="story-st">
+                            <div class="story-block">
+                                <div class="story-img"><img src="img/story-1.png" alt="Dmitry Krotov"></div>
+                                <h3>Dmitry Krotov</h3>
+                                <p>SEO</p>
+                            </div>
+                        </div>
+
+                        <div class="st">
+                            <div class="story-block">
+                                <div class="story-img"><img src="img/story-1.png" alt="Dmitry Krotov"></div>
+                                <h3>Max Nyrkov</h3>
+                                <p>Frontend-developer</p>
+                            </div>
+                        </div>
+
+                        <div class="st">
+                            <div class="story-block">
+                                <div class="story-img"><img src="img/story-1.png" alt="Dmitry Krotov"></div>
+                                <h3>Marat</h3>
+                                <p>Web-designer</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -331,7 +450,7 @@
 
             <div class="get-title">
                 <h3>Get a prototype of your website next week!</h3>
-                <p>Your time is important to us, that’s why we Finish all projects on time!  Let us know when is a good time for a consultation.</p>
+                <p>Your time is important to us, that’s why we Finish all projects on time!  Let us know when <br> is a good time for a consultation.</p>
             </div>
 
             <!-- Get form-->
@@ -340,10 +459,10 @@
                     <label>
                         <input type="text" name="name" placeholder="Name" required>
                     </label>
-                    <label>
+                    <label class="second">
                         <input type="tel" name="phone" placeholder="Phone" required>
                     </label>
-                    <button type="submit">Schedule my free consultation</button>
+                    <button type="submit" class="btn-sub">Schedule my free consultation</button>
                 </form>
             </div>
 
@@ -417,15 +536,19 @@
                 <div id="testimonials-slider">
 
                     <!-- #-->
-                    <div class="testimonials-block">
-                       <div class="testimonials-block-client">
+                    <div class="te">
+                        <div class="testimonials-block">
+                        <div class="testimonials-block-client">
+                            <!-- Client Photo-->
                            <div class="testimonials-block-client-img">
                                <img src="img/client-1.png" alt="">
                            </div>
+                            <!-- Client FIO -->
                            <div class="testimonials-block-client-descr">
                                <h3>Bill Gates</h3>
                                <p>Owner Microsoft</p>
                            </div>
+                            <!-- Text client-->
                            <div class="testimonials-block-client-text">
                                <p>
                                    "Lorem Ipsum is simply dummy text of the printing
@@ -433,12 +556,152 @@
                                    ever since the 1500s, when an unknown printer took a galley of type"
                                </p>
                            </div>
+                            <!-- Client - site - logo-->
                            <div class="testimonials-block-client-logo">
                                <img src="img/client-logo-1.png" alt="client-logo">
                            </div>
                        </div>
+
+                        <!-- Screeen Site client-->
                         <div class="testimonials-block-site">
-                            <img src="testimon-1.png" alt="site">
+                            <img src="img/testimon-1.png" alt="site">
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- #-->
+                    <div class="te">
+                        <div class="testimonials-block">
+                            <div class="testimonials-block-client">
+                                <!-- Client Photo-->
+                                <div class="testimonials-block-client-img">
+                                    <img src="img/client-1.png" alt="">
+                                </div>
+                                <!-- Client FIO -->
+                                <div class="testimonials-block-client-descr">
+                                    <h3>Bill Gates</h3>
+                                    <p>Owner Microsoft</p>
+                                </div>
+                                <!-- Text client-->
+                                <div class="testimonials-block-client-text">
+                                    <p>
+                                        "Lorem Ipsum is simply dummy text of the printing
+                                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                        ever since the 1500s, when an unknown printer took a galley of type"
+                                    </p>
+                                </div>
+                                <!-- Client - site - logo-->
+                                <div class="testimonials-block-client-logo">
+                                    <img src="img/client-logo-1.png" alt="client-logo">
+                                </div>
+                            </div>
+
+                            <!-- Screeen Site client-->
+                            <div class="testimonials-block-site">
+                                <img src="img/testimon-1.png" alt="site">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- #-->
+                    <div class="te">
+                        <div class="testimonials-block">
+                            <div class="testimonials-block-client">
+                                <!-- Client Photo-->
+                                <div class="testimonials-block-client-img">
+                                    <img src="img/client-1.png" alt="">
+                                </div>
+                                <!-- Client FIO -->
+                                <div class="testimonials-block-client-descr">
+                                    <h3>Bill Gates</h3>
+                                    <p>Owner Microsoft</p>
+                                </div>
+                                <!-- Text client-->
+                                <div class="testimonials-block-client-text">
+                                    <p>
+                                        "Lorem Ipsum is simply dummy text of the printing
+                                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                        ever since the 1500s, when an unknown printer took a galley of type"
+                                    </p>
+                                </div>
+                                <!-- Client - site - logo-->
+                                <div class="testimonials-block-client-logo">
+                                    <img src="img/client-logo-1.png" alt="client-logo">
+                                </div>
+                            </div>
+
+                            <!-- Screeen Site client-->
+                            <div class="testimonials-block-site">
+                                <img src="img/testimon-1.png" alt="site">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- #-->
+                    <div class="te">
+                        <div class="testimonials-block">
+                            <div class="testimonials-block-client">
+                                <!-- Client Photo-->
+                                <div class="testimonials-block-client-img">
+                                    <img src="img/client-1.png" alt="">
+                                </div>
+                                <!-- Client FIO -->
+                                <div class="testimonials-block-client-descr">
+                                    <h3>Bill Gates</h3>
+                                    <p>Owner Microsoft</p>
+                                </div>
+                                <!-- Text client-->
+                                <div class="testimonials-block-client-text">
+                                    <p>
+                                        "Lorem Ipsum is simply dummy text of the printing
+                                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                        ever since the 1500s, when an unknown printer took a galley of type"
+                                    </p>
+                                </div>
+                                <!-- Client - site - logo-->
+                                <div class="testimonials-block-client-logo">
+                                    <img src="img/client-logo-1.png" alt="client-logo">
+                                </div>
+                            </div>
+
+                            <!-- Screeen Site client-->
+                            <div class="testimonials-block-site">
+                                <img src="img/testimon-1.png" alt="site">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- #-->
+                    <div class="te">
+                        <div class="testimonials-block">
+                            <div class="testimonials-block-client">
+                                <!-- Client Photo-->
+                                <div class="testimonials-block-client-img">
+                                    <img src="img/client-1.png" alt="">
+                                </div>
+                                <!-- Client FIO -->
+                                <div class="testimonials-block-client-descr">
+                                    <h3>Bill Gates</h3>
+                                    <p>Owner Microsoft</p>
+                                </div>
+                                <!-- Text client-->
+                                <div class="testimonials-block-client-text">
+                                    <p>
+                                        "Lorem Ipsum is simply dummy text of the printing
+                                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                        ever since the 1500s, when an unknown printer took a galley of type"
+                                    </p>
+                                </div>
+                                <!-- Client - site - logo-->
+                                <div class="testimonials-block-client-logo">
+                                    <img src="img/client-logo-1.png" alt="client-logo">
+                                </div>
+                            </div>
+
+                            <!-- Screeen Site client-->
+                            <div class="testimonials-block-site">
+                                <img src="img/testimon-1.png" alt="site">
+                            </div>
                         </div>
                     </div>
 
@@ -465,18 +728,18 @@
                     <div class="contact-descr-attention">
                         <div class="block-l">
                             <p>Please note!</p>
-                            <p class="normal">For best results wetake only 3-4 projects per month</p>
+                            <p class="normal">For best results we take only 3-4 projects per month</p>
                         </div>
                         <div class="block-r">
-                            <p>Projects jeft thise months: </p>
-                            <p>2</p>
+                            <p>Projects left <br>for this months: </p>
+                            <p class="number">2</p>
                         </div>
                     </div>
 
                     <div class="contact-descr-simple">
                         <div class="block-l">
                             <div class="block-l-text">
-                                <p>Loralin</p>
+                                <h3>Loralin</h3>
                                 <p>Client success manager</p>
                             </div>
                             <div class="block-l-phone">
@@ -487,7 +750,7 @@
 
                         <div class="block-r">
                             <div class="block-r-form">
-                                <h3>Or leave your contact and I will call you back</h3>
+                                <h3>Or leave your contact <br>and I will call you back</h3>
 
                                 <form>
                                     <label>
@@ -496,7 +759,7 @@
                                     <label>
                                         <input type="tel" name="phone" placeholder="Phone" required>
                                     </label>
-                                    <button type="submit">Call me!</button>
+                                    <button type="submit" class="btn-sub">Call me!</button>
                                 </form>
                             </div>
                         </div>
@@ -564,6 +827,11 @@
     </div>
 </footer>
 
-
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>

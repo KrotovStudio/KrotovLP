@@ -85,6 +85,49 @@ h3 {
   border-radius: 5px;
 }
 
+.btn-sub {
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0a8ac4;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.44;
+  letter-spacing: normal;
+  padding: 1px 26px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-sub:hover {
+  background-color: #003f69;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+input {
+  width: 227px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #696969;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
 #top-line {
   background-color: #003f69;
   padding: 15px 0;
@@ -202,19 +245,60 @@ h3 {
   font-family: 'GothamProBold',sans-serif;
   line-height: 1.67;
   letter-spacing: normal;
+  text-align: center;
 }
 
 #main .main p {
   font-size: 24px;
   font-family: 'GothamProLight',sans-serif;
+  text-align: center;
 }
 
 .h2-tittle {
   padding-bottom: 44px;
 }
 
+.services-block {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.services-block-img {
+  width: 142px;
+  height: 142px;
+  background-color: #0a8ac4;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-block-img img {
+  margin: auto auto;
+}
+
+.services-block-txt {
+  padding-top: 11px;
+}
+
+.services-block-txt h3 {
+  line-height: 1.3;
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+.services-block-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
 #benefits {
   background-color: #f9f9f9;
+  border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -252,6 +336,14 @@ h3 {
   line-height: 1.33;
   letter-spacing: normal;
   color: #696969;
+}
+
+#portfolio-slider {
+  padding-bottom: 67px;
+}
+
+#exerienced-slider {
+  padding-bottom: 53px;
 }
 
 .portfolio-block {
@@ -292,24 +384,44 @@ h3 {
 .get-title p {
   font-size: 18px;
   color: #ffffff;
+  line-height: 1.3;
+  padding-top: 7px;
 }
 
-.get-form label {
+.get-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.get-form form label {
   position: relative;
 }
 
-.get-form label input {
+.get-form form label.second {
+  margin: 0 30px;
+}
+
+.get-form form label input {
   width: 227px;
   border-radius: 3px;
 }
 
-.get-form label span {
+.get-form form label span {
   font-size: 12px;
   font-family: 'GothamProLight',sans-serif;
   font-style: italic;
-  text-align: left;
   color: #ffffff;
-  width: 100%;
+  position: absolute;
+  width: 237px;
+  right: -4px;
+  top: 37px;
 }
 
 #exerienced {
@@ -343,17 +455,30 @@ h3 {
   line-height: 1.1;
 }
 
+.story-slider {
+  width: 314px;
+  padding: 0 67px;
+  position: relative;
+  top: -30px;
+}
+
 .story-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .story-block {
   text-align: center;
-  padding: 0 67px;
+}
+
+.story-block img {
+  margin: 0 auto;
 }
 
 .story-block h3 {
@@ -369,6 +494,9 @@ h3 {
 
 .story-txt {
   padding-left: 49px;
+  max-width: 520px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .story-txt p {
@@ -378,6 +506,8 @@ h3 {
 
 .story-txt-proud {
   padding-top: 56px;
+  position: relative;
+  top: 50px;
 }
 
 .story-txt-proud h3 {
@@ -440,6 +570,7 @@ h3 {
   color: #ffffff;
   width: 100px;
   height: 100px;
+  line-height: 96px;
   border-radius: 50%;
   margin: 0 auto;
   background-color: #0a8ac4;
@@ -468,24 +599,182 @@ h3 {
   border-bottom: 2px solid #eee;
 }
 
+.testimonials-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.testimonials-block-site {
+  position: relative;
+  left: -18px;
+  width: 50%;
+}
+
+.testimonials-block-client {
+  padding: 47px 29px 29px;
+  background-color: rgba(10, 138, 196, 0.2);
+}
+
+.testimonials-block-client-img {
+  position: relative;
+}
+
+.testimonials-block-client-img:before {
+  content: '';
+  background-image: url("../img/icon-square.svg");
+  width: 57px;
+  height: 43px;
+  position: absolute;
+  left: -11px;
+  top: -72px;
+  z-index: 1;
+}
+
+.testimonials-block-client-img img {
+  position: absolute;
+  bottom: 10px;
+  left: 35px;
+  border-radius: 50%;
+}
+
+.testimonials-block-client-descr {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #696969;
+}
+
+.testimonials-block-client-text {
+  padding: 13px 0 25px;
+}
+
+.testimonials-block-client-text p {
+  line-height: 1.81;
+  color: #444444;
+}
+
 #contact {
   padding-bottom: 0;
+}
+
+.contact .block-l {
+  width: 294px;
+  min-width: 294px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+.contact .block-l-text p {
+  color: #696969;
+  font-family: 'GothamProLight', sans-serif;
+  line-height: 1.5;
+}
+
+.contact .block-l-phone {
+  padding-top: 24px;
+}
+
+.contact .block-l-phone a[href^="mailto:"] {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #0a8ac4;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact .block-l-phone a[href^="mailto:"]:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact .block-l-phone a[href^="tel:"] {
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  position: relative;
+  color: #444444;
+}
+
+.contact .block-l-phone a[href^="tel:"]:after {
+  content: '';
+  background-image: url("../img/tel-maps.png");
+  width: 26px;
+  height: 29px;
+  position: absolute;
+  right: -40px;
+  top: 6px;
 }
 
 .contact-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contact-img {
+  padding-right: 40px;
 }
 
 .contact-descr {
   padding-bottom: 70px;
 }
 
-.contact-descr .block-l {
-  width: 294px;
-  padding-right: 50px;
-  padding-left: 20px;
+.contact-descr-simple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-descr-simple h3 {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.contact-descr-simple form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 13px;
+}
+
+.contact-descr-simple form button {
+  margin-top: 15px;
+  background-image: url("../img/icon-phone.svg");
+  background-position: 13px center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.contact-descr-simple form label {
+  width: 48%;
+}
+
+.contact-descr-simple form label input {
+  width: 100%;
+  border: 1px solid #444;
 }
 
 .contact-descr-attention {
@@ -495,6 +784,34 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
+  color: #fff;
+  font-family: 'GothamProBold', sans-serif;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+.contact-descr-attention .normal {
+  font-family: 'GothamProLight', sans-serif;
+  font-weight: 300;
+}
+
+.contact-descr-attention .block-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-right: 15px;
+}
+
+.contact-descr-attention .block-r .number {
+  font-size: 90px;
+  line-height: 77px;
+  padding-left: 20px;
+  font-family: 'GothamProLight', sans-serif;
+  font-weight: 300;
 }
 
 #footer {
