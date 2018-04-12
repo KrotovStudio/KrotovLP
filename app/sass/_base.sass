@@ -92,3 +92,128 @@ input
   img
     width: 50%
     float: right
+
+.ok
+  background-image: url("../img/icon-ok.svg")
+  background-position: center
+  background-repeat: no-repeat
+  width: 20px
+  height: 15px
+  margin: 0 auto
+.no
+  background-image: url("../img/icon-no.svg")
+  background-position: center
+  background-repeat: no-repeat
+  width: 20px
+  height: 20px
+  margin: 0 auto
+
+table
+  .t
+    font-size: 20px
+    padding: 12px 0
+    &.t1
+      color: #696969
+      background-color: rgba(105, 105, 105, 0.1)
+      border-top: 4px solid #696969
+      position: relative
+      &:before
+        content: 'Competitors'
+        background-color: #696969
+        text-transform: uppercase
+        text-align: center
+        color: #fff
+        font-size: 12px
+        font-weight: 500
+        position: absolute
+        top: -26px
+        width: 100%
+        left: 0
+        line-height: 22px
+    &.t2
+      color: #0a8ac4
+      border-top: 4px solid #0a8ac4
+    &.t3
+      color: #e07713
+      border-top: 4px solid #e07713
+      position: relative
+      &:before
+        content: 'best value'
+        background-color: #e07713
+        text-transform: uppercase
+        text-align: center
+        color: #fff
+        font-size: 12px
+        font-weight: 500
+        position: absolute
+        top: -26px
+        width: 100%
+        left: -3px
+        line-height: 22px
+        border-left: 3px solid #e07713
+        border-right: 3px solid #e07713
+    &.t4
+      color: #444444
+      border-top: 4px solid #444444
+  .b3
+    border-bottom: 4px solid #e07713
+  .b
+    font-weight: bold
+  .bot
+    padding-top: 40px
+  .btn-sub
+    white-space: nowrap
+    font-size: 16px
+    padding: 8px 14px
+  tr
+    &:nth-child(3n+1)
+      border-bottom: 2px solid #d2d2d2
+    td
+      &:nth-child(2)
+        background-color: rgba( #696969, 0.1)
+    &:nth-child(even)
+      background-color: rgba( #696969, 0.1)
+    &:last-child
+      background-color: transparent
+      td
+        background-color: transparent
+        &:first-child
+          padding-top: 15px
+          vertical-align: top
+          span
+            opacity: 0.8
+            font-size: 12px
+            font-weight: 300
+            font-style: italic
+            font-stretch: normal
+            line-height: 1.5
+            letter-spacing: normal
+            color: #222222
+            max-width: 228px
+            display: block
+            box-sizing: border-box
+    th
+      min-width: 165px
+      &:nth-child(4)
+        border-left: solid 3px #e07713
+        border-right: solid 3px #e07713
+    td
+      text-align: center
+      vertical-align: middle
+      height: 69px
+      &:nth-child(4)
+        border-left: solid 3px #e07713
+        border-right: solid 3px #e07713
+      &:first-child
+        text-align: left
+        padding-left: 30px
+        a
+          font-size: 18px
+          line-height: 1.33
+          letter-spacing: normal
+          color: #444444
+          border-bottom: 1px dashed rgba(68, 68, 68, 0.34)
+          &:hover
+            border-bottom: none
+      p
+        text-align: center
