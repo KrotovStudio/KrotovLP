@@ -1,0 +1,304 @@
+@media screen and (max-width: 1040px) {
+  .testimonials-block {
+    padding-top: 65px;
+  }
+  .testimonials-block-client {
+    width: 50%;
+  }
+  .testimonials-block-site img {
+    max-width: 100%;
+  }
+  .slick-next {
+    right: 270px;
+  }
+  .slick-prev {
+    left: 270px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .contact-descr-simple h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .benefits-block {
+    width: 48%;
+  }
+  .story-slider {
+    width: 270px;
+    padding: 0px 60px;
+  }
+  .story-block img {
+    max-width: 100%;
+  }
+  .story-txt {
+    padding-left: 30px;
+  }
+  .story-txt-proud {
+    position: static;
+  }
+  .story-txt-proud-list ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .story-txt-proud-list ul li {
+    padding-bottom: 10px;
+  }
+  .how-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .how-block {
+    width: 50%;
+  }
+  .how-block-number:after {
+    left: 93% !important;
+  }
+  .how-block:nth-of-type(2) .how-block-number:after {
+    display: none;
+  }
+  .contact-img {
+    padding-right: 20px;
+    width: 30%;
+  }
+  .contact .block-l {
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .main-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .slick-next {
+    right: 230px;
+  }
+  .slick-prev {
+    left: 230px;
+  }
+  .services-block-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .services-block {
+    padding-bottom: 25px;
+  }
+  .slick-next {
+    right: 150px;
+  }
+  .slick-prev {
+    left: 150px;
+  }
+  .get-form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .get-form form label.second {
+    margin: 20px 0px;
+  }
+  .get-form form label span {
+    display: none;
+  }
+  .story-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .story-slider {
+    padding-bottom: 30px;
+    position: static;
+  }
+  .story-txt-proud-list ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .how-block-number:after {
+    left: 87% !important;
+  }
+  .how-block {
+    padding-bottom: 30px;
+  }
+  .contact-img {
+    display: none;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .footer > div {
+    width: 50%;
+    padding: 10px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slick-next {
+    right: 130px;
+  }
+  .slick-prev {
+    left: 130px;
+  }
+  .story-txt-proud-list ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  .story-txt {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .benefits-block {
+    width: 100%;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  #main .main h1 {
+    line-height: 1.53;
+  }
+  .footer > div {
+    width: 100%;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-block-week {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer-block-img img {
+    margin: 0 auto;
+  }
+  .testimonials-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .testimonials-block-site {
+    position: static;
+    width: 100%;
+  }
+  .testimonials-block-client {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .contact-descr-attention {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contact .block-l {
+    width: 100%;
+    min-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .contact-descr-attention .block-r {
+    padding: 0 20px;
+  }
+  .contact-descr-simple {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contact-descr-simple .block-r {
+    padding: 20px 20px 0;
+  }
+  .contact-descr-simple form label {
+    width: 100%;
+    padding: 5px 0;
+  }
+  .loralin {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact .block-l-phone a[href^="tel:"] {
+    font-size: 31px;
+  }
+  .story-slider {
+    width: 200px;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+  }
+  #story-slider .slick-next {
+    right: -40px;
+  }
+  #story-slider .slick-prev {
+    left: -40px;
+  }
+  .how-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .how-block-number:not(:last-child):after {
+    display: none;
+  }
+  .how-block {
+    position: relative;
+    width: 280px;
+  }
+  .how-block:nth-child(1):before, .how-block:nth-child(3):before {
+    content: '';
+    background-image: url("../img/float-left.svg");
+    left: 15px;
+    bottom: -44px;
+    width: 57px;
+    height: 187px;
+    position: absolute;
+  }
+  .how-block:nth-child(2):after {
+    content: '';
+    background-image: url("../img/float-right.svg");
+    right: 13px;
+    bottom: -44px;
+    width: 60px;
+    height: 187px;
+    position: absolute;
+  }
+}
