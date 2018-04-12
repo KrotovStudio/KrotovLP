@@ -6,6 +6,10 @@
   background-color: #003f69
   padding: 15px 0
   border-bottom: 1px solid #31bfff
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 1
 .top-line
   display: flex
   align-items: center
@@ -24,7 +28,8 @@
     a
       color: #fff
       transition: 0.3s
-      &:hover
+      &:hover,
+      &.mPS2id-highlight
         color: $main_color
         transition: 0.3s
 .menu-btns
@@ -45,10 +50,48 @@
       background-position: center
       background-repeat: no-repeat
       padding: 11px 22px
-
+.main-nav
+  .close-menu
+    display: none
+  &.active
+    position: fixed
+    background-color: rgba($dop_color, 0.9)
+    left: 0
+    right: 0
+    height: 100%
+    top: 0
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    justify-content: flex-end
+    z-index: 2
+    .close-menu
+      display: block
+    .nav-wrap
+      padding-top: 90px
+      ul
+        flex-direction: column
+        li
+          margin-right: 0
+          font-size: 36px
+          margin-bottom: 30px
+    .menu-btns
+      a
+        font-size: 24px
+.close-menu
+  position: relative
+  width: 100%
+  padding-top: 28px
+  height: 25px
+  padding-bottom: 70px
+  img
+    cursor: pointer
+    position: absolute
+    right: 25px
 
 #main
   background-color: #0a8ac4
+  padding-top: 77px
   .main
     height: 430px
     display: flex

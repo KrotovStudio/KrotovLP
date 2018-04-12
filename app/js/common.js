@@ -82,4 +82,41 @@ $( document ).ready(function() {
         ]
     });
 
+//    Close / open mobile menu
+    $('.open-nav').click(function(){
+        $('.main-nav').addClass('active');
+    });
+    $('.close-nav, a').click(function(){
+        $('.main-nav').removeClass('active');
+    });
+
+//  pagescroll2id
+    $("nav a").mPageScroll2id({
+        offset:77,
+        scrollSpeed: 600
+    });
+
+//  E-mail Ajax Send
+    $("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            $('#popup').show();
+            $('.popup').animate({
+                top: '10%',
+                opacity: 1
+            }, 800 );
+            $('.popup-sms').slideUp( 100 ).delay( 800 ).fadeIn( 400 );
+        }).error(function(){
+            alert("Error!");
+        });
+        return false;
+    });
+
+//animate
+    $("section > div").animated("fadeInUp", "fadeOutDown");
+
 });

@@ -40,6 +40,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-family: 'GothamPro', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -146,6 +147,10 @@ input {
   background-color: #003f69;
   padding: 15px 0;
   border-bottom: 1px solid #31bfff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 .top-line {
@@ -194,9 +199,11 @@ input {
   transition: 0.3s;
 }
 
-.menu-btns li a:hover,
+.menu-btns li a:hover, .menu-btns li a.mPS2id-highlight,
 .main-nav li a:hover,
-.nav-wrap nav ul li a:hover {
+.main-nav li a.mPS2id-highlight,
+.nav-wrap nav ul li a:hover,
+.nav-wrap nav ul li a.mPS2id-highlight {
   color: #e07713;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -232,8 +239,75 @@ input {
   padding: 11px 22px;
 }
 
+.main-nav .close-menu {
+  display: none;
+}
+
+.main-nav.active {
+  position: fixed;
+  background-color: rgba(0, 63, 105, 0.9);
+  left: 0;
+  right: 0;
+  height: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.main-nav.active .close-menu {
+  display: block;
+}
+
+.main-nav.active .nav-wrap {
+  padding-top: 90px;
+}
+
+.main-nav.active .nav-wrap ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main-nav.active .nav-wrap ul li {
+  margin-right: 0;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.main-nav.active .menu-btns a {
+  font-size: 24px;
+}
+
+.close-menu {
+  position: relative;
+  width: 100%;
+  padding-top: 28px;
+  height: 25px;
+  padding-bottom: 70px;
+}
+
+.close-menu img {
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+}
+
 #main {
   background-color: #0a8ac4;
+  padding-top: 77px;
 }
 
 #main .main {
