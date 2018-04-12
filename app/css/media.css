@@ -20,6 +20,22 @@
   .contact-descr-simple h3 {
     font-size: 20px;
   }
+  table .t {
+    font-size: 19px;
+    padding: 12px 0;
+  }
+  table tr th {
+    min-width: 140px;
+  }
+  table tr td:first-child a {
+    font-size: 16px;
+  }
+  table tr td:first-child {
+    padding-left: 20px;
+  }
+  .pricing-landing {
+    padding-right: 58px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -67,6 +83,21 @@
   }
   .contact .block-l {
     padding-right: 25px;
+  }
+  table tr th {
+    min-width: 120px;
+  }
+  table .t {
+    font-size: 16px;
+  }
+  table tr td:first-child a {
+    font-size: 14px;
+  }
+  table .btn-sub {
+    font-size: 14px;
+  }
+  .pricing-landing {
+    padding-right: 26px;
   }
 }
 
@@ -147,6 +178,10 @@
     padding: 10px 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  table tr td {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 
