@@ -185,6 +185,15 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .table-descr {
+    display: none;
+  }
+  .table-mobile {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .slick-next {
     right: 130px;

@@ -116,7 +116,17 @@ $( document ).ready(function() {
         return false;
     });
 
-//animate
+//  animate
     $("section > div").animated("fadeInUp", "fadeOutDown");
 
+//  open / close plan
+    $('.see').click(function(){
+        $(this).parent().prev().find('.table-price-list').show();
+        $(this).hide().next().css('display','inline-block');
+    })
+
+    $('.hide').click(function(){
+        $(this).parent().prev().find('.table-price-list').hide();
+        $(this).hide().prev().css('display','inline-block');
+    })
 });

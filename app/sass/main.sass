@@ -464,6 +464,11 @@
   float: right
   height: 75px
   padding-right: 90px
+  &.mobile
+    float: none
+    height: auto
+    padding: 0
+    padding: 25px 0
   h3
     font-size: 20px
     font-weight: bold
@@ -479,6 +484,127 @@
     letter-spacing: normal
     text-align: center
     color: #696969
+
+.table-price
+  text-align: center
+  margin-bottom: 10px
+  padding: 28px 12px 20px
+  margin-top: 27px
+  &.t1
+    background-color: rgba(#696969, 0.1)
+    position: relative
+    &:before
+      content: 'Competitors'
+      position: absolute
+      text-transform: uppercase
+      font-size: 12px
+      font-weight: 500
+      text-align: center
+      color: #ffffff
+      background-color: #696969
+      top: -27px
+      left: 0
+      right: 0
+      width: 100%
+      padding: 4px 0
+  &.t2
+    border: solid 1px $main_blue_color
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      background-color: $main_blue_color
+      top: -9px
+      left: -1px
+      right: 0
+      width: 100%
+      padding: 4px 1px
+    h3,p,.see
+      color: $main_blue_color
+  &.t3
+    border: solid 1px $main_color
+    position: relative
+    &:before
+      content: 'best value'
+      position: absolute
+      text-transform: uppercase
+      font-size: 12px
+      font-weight: 500
+      text-align: center
+      color: #ffffff
+      background-color: $main_color
+      top: -27px
+      left: 0
+      right: 0
+      width: 100%
+      padding: 4px 0
+    h3,p,.see
+      color: $main_color
+  &.t4
+    border: solid 1px $dark_color
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      background-color: $dark_color
+      top: -9px
+      left: -1px
+      right: 0
+      width: 100%
+      padding: 4px 1px
+    h3,p,.see
+      color: $dark_color
+  &-name
+    h3
+      font-size: 24px
+    p
+      font-size: 36px
+      font-weight: 500
+  &-btn
+    padding-top: 20px
+    padding-bottom: 27px
+    &-sub
+      padding: 11px 26px
+    p
+      font-size: 16px
+      font-weight: 300
+      font-style: normal
+      font-stretch: normal
+      line-height: normal
+      letter-spacing: normal
+      border-bottom: 1px dashed
+      display: inline-block
+      cursor: pointer
+      &:hover
+        border: none
+      &.see
+        color: #444444
+      &.hide
+        color: $main_color
+        display: none
+  &-list
+    display: none
+    &.active
+      display: block
+    li
+      padding-top: 29px
+      p
+        margin-bottom: 11px
+      a
+        font-size: 18px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: 1.33
+        letter-spacing: normal
+        color: #444444
+        border-bottom: 1px dashed
+        &:hover
+          border: none
+.table-mobile
+  .btn-sub
+    padding: 11px 26px
+    line-height: 42px
 
 #footer
   background: $dark_color
