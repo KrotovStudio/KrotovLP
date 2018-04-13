@@ -104,6 +104,7 @@ $( document ).ready(function() {
             url: "mail.php", //Change
             data: th.serialize()
         }).done(function() {
+            alert('OK');
             $('#popup').show();
             $('.popup').animate({
                 top: '10%',

@@ -1346,3 +1346,11 @@ table tr td p {
   color: #696969;
   font-family: 'BlissProLight', sans-serif;
 }
+
+.table-descr {
+  display: block;
+}
+
+.table-mobile {
+  display: none;
+}
