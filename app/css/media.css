@@ -179,6 +179,9 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
+  .contact h2 {
+    padding-right: 0;
+  }
   table tr td {
     padding-top: 8px;
     padding-bottom: 8px;

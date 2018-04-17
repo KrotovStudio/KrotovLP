@@ -58,6 +58,7 @@ section {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 img {
@@ -327,7 +328,7 @@ table tr td p {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .top-line {
@@ -374,6 +375,8 @@ table tr td p {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .menu-btns li a:hover, .menu-btns li a.mPS2id-highlight,
@@ -389,10 +392,12 @@ table tr td p {
 
 .menu-btns a {
   color: #fff;
-  height: 45px;
-  line-height: 45px;
-  font-size: 20px;
-  padding: 11px 17px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 11px 15px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -413,7 +418,7 @@ table tr td p {
   background-image: url("../img/icon-phone.svg");
   background-position: center;
   background-repeat: no-repeat;
-  padding: 11px 22px;
+  padding: 11px 18px;
 }
 
 .main-nav .close-menu {
@@ -568,7 +573,7 @@ table tr td p {
 }
 
 .benefits-block {
-  width: 30%;
+  width: 32%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,6 +877,7 @@ table tr td p {
   -ms-flex-align: center;
   align-items: center;
   padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .testimonials-block-site {
@@ -927,6 +933,10 @@ table tr td p {
   padding-bottom: 0;
 }
 
+.contact h2 {
+  padding-right: 120px;
+}
+
 .contact .block-l {
   width: 294px;
   min-width: 294px;
@@ -969,7 +979,7 @@ table tr td p {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 0.67;
+  line-height: 1;
   letter-spacing: normal;
   position: relative;
   color: #444444;
@@ -1073,7 +1083,9 @@ table tr td p {
 
 .contact-descr-attention .block-r .number {
   font-size: 90px;
-  line-height: 77px;
+  line-height: 1;
+  position: relative;
+  top: 8px;
   padding-left: 20px;
   font-family: 'GothamProLight', sans-serif;
   font-weight: 300;
@@ -1353,4 +1365,11 @@ table tr td p {
 
 .table-mobile {
   display: none;
+}
+
+.mfp-close {
+  background-image: url("../img/icon-close-popup.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
 }

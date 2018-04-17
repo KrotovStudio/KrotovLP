@@ -96,6 +96,27 @@ $( document ).ready(function() {
         scrollSpeed: 600
     });
 
+//  popup
+    $(document).ready(function() {
+        $('.popup').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#name',
+
+            // When elemened is focused, some mobile browsers in some cases zoom in
+            // It looks not nice, so we disable it:
+            callbacks: {
+                beforeOpen: function() {
+                    if($(window).width() < 700) {
+                        this.st.focus = false;
+                    } else {
+                        this.st.focus = '#name';
+                    }
+                }
+            }
+        });
+    });
+
 //  E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
@@ -104,21 +125,26 @@ $( document ).ready(function() {
             url: "mail.php", //Change
             data: th.serialize()
         }).done(function() {
-            alert('OK');
-            $('#popup').show();
-            $('.popup').animate({
-                top: '10%',
-                opacity: 1
-            }, 800 );
-            $('.popup-sms').slideUp( 100 ).delay( 800 ).fadeIn( 400 );
+            $.magnificPopup.open({
+                items: {
+                    src: '.modal-thanks'
+                }
+            });
+            setTimeout(function () {
+                $.magnificPopup.close();
+            }, 3000);
         }).error(function(){
-            alert("Error!");
+            $.magnificPopup.open({
+                items: {
+                    src: '.modal-error'
+                }
+            });
+            setTimeout(function () {
+                $.magnificPopup.close();
+            }, 3000);
         });
         return false;
     });
-
-//  animate
-    $("section > div").animated("fadeInUp", "fadeOutDown");
 
 //  open / close plan
     $('.see').click(function(){
@@ -130,4 +156,11 @@ $( document ).ready(function() {
         $(this).parent().prev().find('.table-price-list').hide();
         $(this).hide().prev().css('display','inline-block');
     })
+});
+
+/* Маска для телефона */
+$(document).ready(function(){
+    $('input[type="tel"]').inputmask({
+        showMaskOnHover: true
+    });
 });
